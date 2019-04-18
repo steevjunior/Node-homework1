@@ -10,8 +10,8 @@ console.log('the array after descending sort : ');
 const newarray = lo.sortBy(myarray,['age']).reverse();
 console.log(newarray);
 console.log('------------------------------------------------------------');
-console.log("the youngest personne is : ",lo.last(newarray).name);
-console.log("the oldest personne is :",lo.first(newarray).name);
+console.log("the youngest personne is : ",lo.minBy(myarray,'age').name);
+console.log("the oldest personne is :",lo.maxBy(myarray,'age').name);
 console.log('------------------------------------------------------------');
 console.log(' removing the oldest personne .......',lo.remove(newarray,lo.first(newarray)));
 
