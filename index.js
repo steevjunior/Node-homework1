@@ -13,7 +13,7 @@ console.log('------------------------------------------------------------');
 console.log("the youngest personne is : ",lo.minBy(myarray,'age').name);
 console.log("the oldest personne is :",lo.maxBy(myarray,'age').name);
 console.log('------------------------------------------------------------');
-console.log(' removing the oldest personne .......',lo.remove(newarray,lo.first(newarray)));
+console.log(' removing the oldest personne .......',lo.remove(myarray,lo.maxBy(myarray)));
 
 console.log('------------------------------------------------------------');
 console.log('grouping people by age');
